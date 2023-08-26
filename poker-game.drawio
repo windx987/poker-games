@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-26T11:44:44.276Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="T2I6gNa_rF959xW_hpYf" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-26T11:45:27.184Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="DeZF-Wh0E5N8XhEOBENm" version="21.6.9" type="github">
   <diagram name="Page-1" id="uVypQQDLNSSu0vE7qaki">
-    <mxGraphModel dx="4032" dy="2772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1947" dy="1677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,7 +87,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="BQRaxgCQvnD2v8AD4hpp-8" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to see the community cards as they are revealed during the game.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1160" y="-300" width="520" height="120" as="geometry" />
+          <mxGeometry x="3630" y="-350" width="520" height="120" as="geometry" />
         </mxCell>
         <mxCell id="BQRaxgCQvnD2v8AD4hpp-17" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="2690" y="-557.5" width="30" height="60" as="geometry" />
@@ -141,37 +141,37 @@
           <mxGeometry x="3030" y="-880" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-14" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to join a poker game with my friends so that we can play together online.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-757.5" width="570" height="110" as="geometry" />
+          <mxGeometry x="3630" y="-807.5" width="570" height="110" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-16" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to receive my hole cards when the hand starts.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-605" width="460" height="110" as="geometry" />
+          <mxGeometry x="3630" y="-655" width="460" height="110" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-17" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to place bets or take other actions during the betting rounds.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-465" width="520" height="110" as="geometry" />
+          <mxGeometry x="3630" y="-515" width="520" height="110" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-18" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to see the winner(s) of the hand at the showdown.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-140" width="520" height="120" as="geometry" />
+          <mxGeometry x="3630" y="-190" width="520" height="120" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-19" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to play multiple hands and see my overall chip count.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="21.25" width="520" height="120" as="geometry" />
+          <mxGeometry x="3630" y="-28.75" width="520" height="120" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-20" value="May have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-790" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-840" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-21" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-635" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-685" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-22" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-492.5" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-542.5" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-23" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-327.5" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-377.5" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-24" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-167.5" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-217.5" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-25" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-6.25" width="80" height="27.5" as="geometry" />
+          <mxGeometry x="3630" y="-56.25" width="80" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="kD0prJSjj4pnY93BC7ym-27" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
