@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-08-25T13:54:52.503Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="qylrvvkcw2sn6K3oxsJs" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-26T09:45:07.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.200" etag="d8PQCVm27O5QC0Es6hGK" version="21.6.9" type="github">
   <diagram name="Page-1" id="uVypQQDLNSSu0vE7qaki">
-    <mxGraphModel dx="4435" dy="3070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1608" dy="1498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-24" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=0;indent=5;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
-          <mxGeometry x="3030" y="-792.5" width="818.12" height="822.5" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-24" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=0;indent=5;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="4120" y="-1061.25" width="818.12" height="822.5" as="geometry" />
         </mxCell>
         <mxCell id="7NxPG_Tq_mu3tRVLG-84-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;Interface&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br/&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br/&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="550" y="-770" width="190" height="140" as="geometry" />
@@ -71,7 +71,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-1" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7NxPG_Tq_mu3tRVLG-84-29" target="lx3yEEKkzTqISbTK3qfr-11">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-1" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7NxPG_Tq_mu3tRVLG-84-29" target="lx3yEEKkzTqISbTK3qfr-11" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-390" y="-260" as="sourcePoint" />
             <mxPoint x="-300" y="-260" as="targetPoint" />
@@ -80,122 +80,143 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-2" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7NxPG_Tq_mu3tRVLG-84-29" target="7NxPG_Tq_mu3tRVLG-84-18">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-2" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7NxPG_Tq_mu3tRVLG-84-29" target="7NxPG_Tq_mu3tRVLG-84-18" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-230" y="-190" as="sourcePoint" />
             <mxPoint x="-140" y="-190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-8" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;Title: Enjoying a Thrilling Poker Game Night&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;As&lt;/b&gt; a poker enthusiast and avid card game player,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;I want&lt;/b&gt; to have an engaging and exciting poker game night with my friends,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;So that&lt;/b&gt; we can have fun, test our skills, and create lasting memories.&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="-860" width="470" height="140" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-8" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to see the community cards as they are revealed during the game.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="-300" width="520" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-9" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;Scenario 1: Setting up the Game Night&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Given&lt;/b&gt; that I have invited my friends over for a poker game night,&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; they arrive at my place,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will ensure that I have a comfortable and well-lit playing area ready with enough chairs and a sturdy table.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will make sure to have a standard deck of 52 playing cards and a set of poker chips for betting.&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="-710" width="600" height="180" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-17" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2360" y="-680" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Scenario 2: Explaining the Rules&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; that some of my friends might not be familiar with the rules of poker,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; everyone is settled and ready to start,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will take a few minutes to explain the basic rules of Texas Hold&#39;em, including hand rankings, blinds, betting&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;rounds, and the goal of winning chips.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will answer any questions to ensure everyone understands the gameplay before we begin.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="-520" width="600" height="190" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-19" value="action" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2770" y="-455" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-11" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Scenario 3: Dealing the Cards&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; that everyone is clear about the rules,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; the first round begins,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will act as the dealer and distribute two private cards (hole cards) to each player, face down.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will deal five community cards (the flop, turn, and river) in the center of the table, face up, as the betting rounds progress.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="-320" width="600" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-12" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;div&gt;Scenario 4: Betting Rounds&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; the initial cards have been dealt,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; the betting rounds start,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will ensure that each player, in clockwise order, has a chance to fold, check, bet, call, or raise based on their hand and the community cards.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will keep the betting organized and prevent any confusion, allowing each player to make their decisions in a timely manner.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="-920" width="600" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-13" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Scenario 5: Revealing the Winner&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; that all the betting rounds are complete,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; the final community card is dealt and the last betting round concludes,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will guide the remaining players to reveal their hole cards and form the best possible five-card poker hand using their two hole cards and the five community cards.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will compare the hands to determine the winner based on the standard hand rankings (e.g., royal flush, straight, two pairs, etc.).&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="-720" width="600" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-14" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Scenario 6: Celebrating and Reflecting&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; that the winner of the poker game has been determined,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; the game concludes,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; we will celebrate the winner and the overall enjoyment of the game.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; we will discuss memorable hands, bluffs, and strategies used during the game, fostering a friendly and engaging atmosphere.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="-520" width="600" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-15" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;Scenario 7: Planning for the Next Game Night&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Given&lt;/b&gt; the positive experience and fun we had during the poker game night,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;When&lt;/b&gt; the evening comes to an end,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Then&lt;/b&gt; I will suggest planning another poker game night in the future to continue the excitement and camaraderie.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;And&lt;/b&gt; I will gather feedback from my friends to make improvements and adjustments for an even better experience next time.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="-320" width="600" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-16" value="join game" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3310" y="-550" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-17" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2900" y="-580" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-18" value="rules explaining" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3110" y="-690" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-19" value="action" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3310" y="-355" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-21" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-17" target="BQRaxgCQvnD2v8AD4hpp-16">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-21" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=-0.004;entryY=0.457;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="BQRaxgCQvnD2v8AD4hpp-17" target="BQRaxgCQvnD2v8AD4hpp-27" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3050" y="-500" as="sourcePoint" />
-            <mxPoint x="3220" y="-500" as="targetPoint" />
+            <mxPoint x="2510" y="-600" as="sourcePoint" />
+            <mxPoint x="2770" y="-620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-25" value="System" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3950" y="-665" width="30" height="60" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-25" value="System" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3480" y="-660" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-26" value="initial deck" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3570" y="-735" width="140" height="70" as="geometry" />
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-27" value="Joining a Game" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2830" y="-735" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-27" value="Use Case" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3300" y="-140" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-35" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-16">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-36" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BQRaxgCQvnD2v8AD4hpp-17" target="BQRaxgCQvnD2v8AD4hpp-19" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3470" y="-357.75" as="sourcePoint" />
-            <mxPoint x="3470" y="-433.75" as="targetPoint" />
+            <mxPoint x="2450" y="-560" as="sourcePoint" />
+            <mxPoint x="2750" y="-420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-36" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-17" target="BQRaxgCQvnD2v8AD4hpp-19">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-37" value="bet" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3010" y="-530" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-38" value="flop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3030" y="-450" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-39" value="pass" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3010" y="-370" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-41" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-37" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="2990" y="-460" as="sourcePoint" />
-            <mxPoint x="3290" y="-320" as="targetPoint" />
+            <mxPoint x="2940" y="-367.75" as="sourcePoint" />
+            <mxPoint x="2940" y="-443.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-37" value="bet" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3550" y="-430" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-38" value="flop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3570" y="-350" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-39" value="pass" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3550" y="-270" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-41" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-37">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-42" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-38" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3480" y="-267.75" as="sourcePoint" />
-            <mxPoint x="3480" y="-343.75" as="targetPoint" />
+            <mxPoint x="2920" y="-335" as="sourcePoint" />
+            <mxPoint x="2990" y="-435" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-42" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-38">
+        <mxCell id="BQRaxgCQvnD2v8AD4hpp-44" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-39" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3460" y="-235" as="sourcePoint" />
-            <mxPoint x="3530" y="-335" as="targetPoint" />
+            <mxPoint x="2900" y="-250" as="sourcePoint" />
+            <mxPoint x="3010" y="-340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-44" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-19" target="BQRaxgCQvnD2v8AD4hpp-39">
+        <mxCell id="kD0prJSjj4pnY93BC7ym-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;fillColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="-572.5" width="34" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-7" value="Start Game" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4210" y="-930" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-8" value="Deal Cards" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4190" y="-780" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-9" value="Place Bets" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4390" y="-942.5" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-11" value="Reveal Cards" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4400" y="-790" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-12" value="Reveal Cards" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4310" y="-635" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-14" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to join a poker game with my friends so that we can play together online.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-757.5" width="570" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-16" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to receive my hole cards when the hand starts.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-607.5" width="460" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-17" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to place bets or take other actions during the betting rounds.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-465" width="520" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-18" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to see the winner(s) of the hand at the showdown.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-140" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-19" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;As a player, I want to play multiple hands and see my overall chip count.&lt;br&gt;&lt;/blockquote&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="21.25" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-20" value="May have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-790" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-21" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-635" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-22" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-492.5" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-23" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-327.5" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-24" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-167.5" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-25" value="Much have" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="-6.25" width="80" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-27" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3440" y="-150" as="sourcePoint" />
-            <mxPoint x="3550" y="-240" as="targetPoint" />
+            <mxPoint x="2910" y="-850" as="sourcePoint" />
+            <mxPoint x="2910" y="-980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-47" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-26" target="BQRaxgCQvnD2v8AD4hpp-25">
+        <mxCell id="kD0prJSjj4pnY93BC7ym-28" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3790" y="-667.5" as="sourcePoint" />
-            <mxPoint x="4095" y="-672.5" as="targetPoint" />
+            <mxPoint x="2850" y="-445" as="sourcePoint" />
+            <mxPoint x="2850" y="-575" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-49" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-16" target="BQRaxgCQvnD2v8AD4hpp-18">
+        <mxCell id="kD0prJSjj4pnY93BC7ym-29" value="&amp;lt;&amp;lt;attend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3351" y="-700" as="sourcePoint" />
-            <mxPoint x="3230" y="-620" as="targetPoint" />
+            <mxPoint x="2960" y="-860" as="sourcePoint" />
+            <mxPoint x="2960" y="-980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-53" value="initial deck" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3570" y="-635" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BQRaxgCQvnD2v8AD4hpp-54" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="BQRaxgCQvnD2v8AD4hpp-53" target="BQRaxgCQvnD2v8AD4hpp-25">
+        <mxCell id="kD0prJSjj4pnY93BC7ym-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="3730" y="-595" as="sourcePoint" />
-            <mxPoint x="3940" y="-505" as="targetPoint" />
+            <mxPoint x="3210" y="-697" as="sourcePoint" />
+            <mxPoint x="3450" y="-710" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kD0prJSjj4pnY93BC7ym-31" value="bet" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3040" y="-762.5" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
