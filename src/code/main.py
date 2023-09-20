@@ -1,50 +1,28 @@
-import random
+# from __future__ import annotations
+from typing import Any, Union
 
 class ListNode:
     def __init__(self, data):
         self.data = data
         self.next = None
+        
+rank_map = {
+    "2": 0, "3": 1, "4": 2, "5": 3, "6": 4, "7": 5, "8": 6, "9": 7,
+    "T": 8, "J": 9, "Q": 10, "K": 11, "A": 12,
+}
+suit_map = {
+    "C": 0, "D": 1, "H": 2, "S": 3,
+    "c": 0, "d": 1, "h": 2, "s": 3
+}
+
+rank_reverse_map = {value: key for key, value in rank_map.items()}
+suit_reverse_map = {value: key for key, value in suit_map.items() if key.islower()}
 
 class Card:
-    def __init__(self, rank, suit):
-        self.rank = rank
-        self.suit = suit
-
-    def __str__(self):
-        return f"{self.rank}{self.suit}"
-
-class Deck:
-    def __init__(self):
-        ranks = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-        suits = ["H", "D", "C", "S"]
-        self.cards = [Card(rank, suit) for rank in ranks for suit in suits]
-        random.shuffle(self.cards)
-        self.head = None
-
-        for card in self.cards:
-            new_node = ListNode(card)
-            new_node.next = self.head
-            self.head = new_node
-
-    def deal_card(self):
-        if not self.is_empty():
-            dealt_card = self.head.data
-            self.head = self.head.next
-            return dealt_card
-
-    def is_empty(self):
-        return self.head is None
-
-    def count_cards(self):
-        current_node = self.head
-        count = 0
-
-        while current_node:
-            count += 1
-            current_node = current_node.next
-
-        return count
-
+    def __init__(self, other: Union[int, str, Card]):
+        self.__slots__ = ["__id"]
+        self.__id = int 
+          
 class Player:
     def __init__(self, name, chips=0):
         self.name = name
