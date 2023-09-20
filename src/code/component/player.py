@@ -19,6 +19,6 @@ class Hand:
     def show_strength(self):
         return self.strength
     
-    def calculate_strength(self):
-        return 
+    def check_strength(self):
+        self.
         

@@ -1,59 +1,16 @@
 # from __future__ import annotations
 from typing import Any, Union
+from .player import Player
+# from .card import Deck, Card
 
 class ListNode:
     def __init__(self, data):
         self.data = data
-        self.next = None
-        
-rank_map = {
-    "2": 0, "3": 1, "4": 2, "5": 3, "6": 4, "7": 5, "8": 6, "9": 7,
-    "T": 8, "J": 9, "Q": 10, "K": 11, "A": 12,
-}
-suit_map = {
-    "C": 0, "D": 1, "H": 2, "S": 3,
-    "c": 0, "d": 1, "h": 2, "s": 3
-}
-
-rank_reverse_map = {value: key for key, value in rank_map.items()}
-suit_reverse_map = {value: key for key, value in suit_map.items() if key.islower()}
-
-class Card:
-    def __init__(self, other: Union[int, str, Card]):
-        self.__slots__ = ["__id"]
-        self.__id = int 
+        self.next = None        
           
-class Player:
-    def __init__(self, name, chips=0):
-        self.name = name
-        self.chips = chips
-        self.hand_head = None
-        self.next_player = None
-
-    def add_chips(self, amount):
-        self.chips += amount
-
-    def remove_chips(self, amount):
-        self.chips -= amount
-
-    def add_to_hand(self, card):
-        new_node = ListNode(card)
-        new_node.next = self.hand_head
-        self.hand_head = new_node
-
-    def clear_hand(self):
-        self.hand_head = None
-
-    def hand_display(self):
-        current = self.hand_head
-        print(f"name: {self.name}, chips: {self.chips}, hands", end=": " )
-        while current:
-            print(current.data, end=", " if current.next else "\n")
-            current = current.next
-
 class PokerTable:
     def __init__(self):
-        self.community_head = None
+        self.community_cards = []
         self.player_head = None
         self.deck = Deck()
 
