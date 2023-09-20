@@ -11,7 +11,7 @@ class Card:
         self.suit = suit
 
     def __str__(self):
-        return f"{self.rank} of {self.suit}"
+        return f"{self.rank}{self.suit}"
 
 class Deck:
     def __init__(self):
@@ -34,7 +34,6 @@ class Deck:
 
     def is_empty(self):
         return self.head is None
-
 
     def count_cards(self):
         current_node = self.head
@@ -141,7 +140,7 @@ class PokerTable:
 MyTable = PokerTable()
 
 # register players
-player = Player("John", None)
+player = Player("RRRRRR", None)
 MyTable.append(player)
 
 # register players
