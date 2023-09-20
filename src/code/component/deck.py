@@ -38,4 +38,3 @@ class Deck:
         card = self.head
         self.head = self.head.next
         return card
-    

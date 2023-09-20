@@ -3,7 +3,10 @@ class Player:
         self.name = name
         self.chips = chips
         self.hand = Hand()
-        self.next_player = None
+        self.next = None
+        
+    def __str__(self):
+        return f"name : {self.name}, hand : {self.hand.cards}, chips : {self.chips}"
 
     def add_chips(self, amount):
         self.chips += amount
@@ -20,5 +23,4 @@ class Hand:
         return self.strength
     
     def check_strength(self):
-        self.
-        
+        pass 
