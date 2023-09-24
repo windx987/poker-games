@@ -1,8 +1,8 @@
 from __future__ import annotations
 from typing import Any, Union
-from .player import Player, PlayerStatus
-from .deck import Deck
-from .utils import ListNode
+from player import Player, PlayerStatus
+from deck import Deck
+from utils import ListNode
 
 class PokerTable:
 

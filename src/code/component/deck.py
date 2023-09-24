@@ -1,5 +1,5 @@
-from .utils import ListNode, random
-from .card import Card
+from utils import ListNode, random
+from card import Card
 
 RANK = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
 SUIT = ['C', 'D', 'H', 'S']
@@ -35,6 +35,7 @@ class Deck:
             self.head = new_node
             
     def deal_card(self):
-        card = self.head
+        card = self.head.data
         self.head = self.head.next
         return card
+    

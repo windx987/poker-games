@@ -31,4 +31,4 @@ class Hand:
         return self.strength
     
     def update_strength(self):
-        self.strength = 
+        pass

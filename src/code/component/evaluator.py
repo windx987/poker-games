@@ -1,9 +1,9 @@
 """Module evaluating cards."""
 from typing import Union
 
-from .card import Card
-from .hash import hash_quinary
-from .tables import (
+from card import Card
+from hash import hash_quinary
+from tables import (
     BINARIES_BY_ID,
     FLUSH,
     NO_FLUSH_5,
@@ -78,3 +78,8 @@ def _evaluate_cards(*cards: int) -> int:
         hand_quinary[card // 4] += 1
 
     return no_flush[hash_quinary(hand_quinary, hand_size)]
+
+rank1 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc")
+rank2 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kd")
+rank3 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc", "Qh")
+print(rank1 == rank2 == rank3) # Those three are evaluated by `A A A A K`
