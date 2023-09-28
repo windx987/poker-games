@@ -9,13 +9,13 @@ This is an python base project.
     ```bash
     git clone https://github.com/windx987/poker-games.git 
  
-    cd code/component
+    cd src/code/component
  
     python3 server.py
     ```
 - To play run the following command
     ```bash
-    cd code/component
+    cd src/code/component
  
     python3 play.py
     ```
