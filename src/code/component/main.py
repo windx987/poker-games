@@ -4,6 +4,7 @@ from player import Player, Action
 from deck import Deck, Card
 from utils import ListNode
 from .enum import RoleStatus, Action
+import threading
 
 
 class PokerTable:
@@ -13,13 +14,7 @@ class PokerTable:
         self.player_head = None
         self.deck = Deck()
         self.total_bet = None
-
         self.highest_bet = None
-
-        if self.player_count() > 2:
-            self.role_status = RoleStatus.ON
-        else:
-            self.role_status = RoleStatus.OFF
 
     def reset_deck(self):
         self.deck = Deck()
