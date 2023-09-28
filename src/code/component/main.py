@@ -1,9 +1,9 @@
 from __future__ import annotations
 from typing import Any, Union
-from player import Player, PlayerStatus
-from deck import Deck
-from round import Round
+from player import Player, Action
+from deck import Deck, Card
 from utils import ListNode
+from .enum import RoleStatus, Action
 
 
 class PokerTable:
@@ -14,10 +14,21 @@ class PokerTable:
         self.deck = Deck()
         self.total_bet = None
 
+        self.highest_bet = None
+
+        if self.player_count() > 2:
+            self.role_status = RoleStatus.ON
+        else:
+            self.role_status = RoleStatus.OFF
+
     def reset_deck(self):
         self.deck = Deck()
 
     def add_community_card(self, card):
+        if not isinstance(card, Card):
+            raise ValueError(
+                "Only Card instances can be added to the array."
+            )
         self.community_cards.append(card)
 
     def clear_community_cards(self):
@@ -30,14 +41,14 @@ class PokerTable:
 
         if self.player_head is None:
             self.player_head = player
-            player.next = player  # Create a self-loop for the initial player
+            player.next = player
 
         else:
             current_player = self.player_head
             while current_player.next != self.player_head:
                 current_player = current_player.next
             current_player.next = player
-            player.next = self.player_head  # Create a cycle
+            player.next = self.player_head
 
     def player_count(self):
         total_player = 0
@@ -55,7 +66,7 @@ class PokerTable:
     def find_highest_point(self):
         current = self.player_head
         while current.next != self.player_head:
-            if current.status == PlayerStatus.ACTIVE and current.hand.strength > highest_points:
+            if current.status != Action.FOLD and current.hand.strength > highest_points:
                 highest_points = current.hand.strength
             current = current.next
         return highest_points
@@ -65,7 +76,7 @@ class PokerTable:
         current = self.player_head
         winners = []
         while current.next != self.player_head:
-            if current.status == PlayerStatus.ACTIVE and current.hand.strength == highest:
+            if current.status != Action.FOLD and current.hand.strength == highest:
                 winners.append(current)
             current = current.next
         return winners
@@ -73,7 +84,7 @@ class PokerTable:
     def determine(self):
         winners = self.find_winners_with_highest_points()
         if len(winners) < 1:
-            raise ("error")
+            raise ("determine error")
         elif len(winners) == 1:
             return self.distribute_chips_to_single_winner(winners[0])
         else:
@@ -91,20 +102,3 @@ class PokerTable:
         winner_names = ', '.join([player.name for player in players])
         print(
             f"{winner_names} win and each receives {self.total_bet // len(players)} chips.")
-
-
-MyTable = PokerTable()
-
-# register players
-player = Player("RRRRRR", None)
-MyTable.append(player)
-
-# register players
-player = Player("Alex", None)
-MyTable.append(player)
-
-# register players
-player = Player("Jack", None)
-MyTable.append(player)
-
-MyTable._player_info()

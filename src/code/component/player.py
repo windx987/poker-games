@@ -1,14 +1,6 @@
-from enum import Enum
+from .enum import Action
 from deck import Card
 from evaluator import evaluate_cards, _evaluate_cards
-
-
-class Action(Enum):
-    FOLD = 0
-    CHECK = 1
-    RISE = 2
-    CALL = 3
-    ALL_IN = 4
 
 
 class Player:
