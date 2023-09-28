@@ -11,6 +11,13 @@ This is an python base project.
  
     cd code/component
  
-    python3 poker.py
+    python3 server.py
     ```
+- To play run the following command
+    ```bash
+    cd code/component
+ 
+    python3 play.py
+    ```
+- Don't forget to run server.py before using python3 play.pys
 
