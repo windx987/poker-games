@@ -1,6 +1,6 @@
 # poker-games-project 
 
-This is an [python] base project.
+This is an python base project.
 
 ## Getting Started
 
