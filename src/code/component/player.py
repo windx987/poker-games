@@ -1,9 +1,15 @@
 from enum import Enum
+from deck import Card
+from evaluator import evaluate_cards, _evaluate_cards
 
-class PlayerStatus(Enum):
-    ACTIVE = 1
-    FOLDED = 0
-    
+
+class Action(Enum):
+    FOLD = 0
+    CHECK = 1
+    RISE = 2
+    CALL = 3
+    ALL_IN = 4
+
 
 class Player:
     def __init__(self, name, chips=0):
@@ -12,7 +18,7 @@ class Player:
         self.hand = Hand()
         self.status = None
         self.next = None
-        
+
     def __str__(self):
         return f"name : {self.name}, hand : {self.hand.cards}, chips : {self.chips}, status : {self.status}"
 
@@ -21,14 +27,27 @@ class Player:
 
     def remove_chips(self, amount):
         self.chips -= amount
-        
+
+
 class Hand:
     def __init__(self):
-        self.cards = []
+        self.__cards = []
         self.strength = None
 
-    def show_strength(self):
-        return self.strength
-    
+    @property
+    def cards(self):
+        return self.__cards
+
+    @cards.setter
+    def add_card(self, card):
+        if not isinstance(card, Card):
+            raise ValueError(
+                "Only Card instances can be added to the array."
+            )
+        self.__cards.append(card)
+
+    def reset_cards(self):
+        self.__cards = []
+
     def update_strength(self):
-        pass
+        self.strength = evaluate_cards(self.cards)

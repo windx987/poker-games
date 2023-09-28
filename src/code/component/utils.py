@@ -9,3 +9,7 @@ def sample_cards(size: int) -> [int]:
     return random.sample(range(52), k=size)
 
 
+class ListNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
