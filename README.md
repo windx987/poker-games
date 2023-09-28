@@ -19,5 +19,5 @@ This is an python base project.
  
     python3 play.py
     ```
-- Don't forget to run server.py before using python3 play.pys
+- Don't forget to run server.py before using python3 play.py
 
