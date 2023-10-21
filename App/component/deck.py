@@ -22,6 +22,7 @@ SUIT = ['C', 'D', 'H', 'S']
             |    A |   48 |   49 |   50 |   51 |
 """
 
+
 class Deck:
     def __init__(self):
         self.cards = [Card(rank+suit) for rank in RANK for suit in SUIT]
@@ -33,9 +34,8 @@ class Deck:
             new_node = ListNode(card)
             new_node.next = self.head
             self.head = new_node
-            
+
     def deal_card(self):
-        card = self.head.data
+        card = self.head.value
         self.head = self.head.next
         return card
-    

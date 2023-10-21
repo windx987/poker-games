@@ -79,7 +79,7 @@ def _evaluate_cards(*cards: int) -> int:
 
     return no_flush[hash_quinary(hand_quinary, hand_size)]
 
-rank1 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc")
-rank2 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kd")
-rank3 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc", "Qh")
-print(rank1 == rank2 == rank3) # Those three are evaluated by `A A A A K`
+# rank1 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc")
+# rank2 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kd")
+# rank3 = evaluate_cards("Ac", "Ad", "Ah", "As", "Kc", "Qh")
+# print(rank1 == rank2 == rank3) # Those three are evaluated by `A A A A K`

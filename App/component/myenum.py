@@ -1,11 +1,6 @@
 from enum import Enum
 
 
-class RoleStatus(Enum):
-    OFF = False
-    ON = True
-
-
 class Action(Enum):
     FOLD = 0
     CHECK = 1
