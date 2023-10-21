@@ -84,21 +84,26 @@ class PokerTable:
                 break
 
     def find_highest_point(self):
+        highest_points = 0
         current = self.player_head
-        while current.next != self.player_head:
+        while True:
             if current.status != Action.FOLD and current.hand.strength > highest_points:
                 highest_points = current.hand.strength
             current = current.next
+            if current == self.player_head:
+                break
         return highest_points
 
     def find_winners_with_highest_points(self):
         highest = self.find_highest_point()
         current = self.player_head
         winners = []
-        while current.next != self.player_head:
+        while True:
             if current.status != Action.FOLD and current.hand.strength == highest:
                 winners.append(current)
             current = current.next
+            if current == self.player_head:
+                break
         return winners
 
     def determine(self):
@@ -242,7 +247,8 @@ class PokerTable:
                 while True:
                     if current.status != Action.FOLD:
 
-                        print(f"community-cards: {self.community_cards}")
+                        print(
+                            f"community-cards: {self.community_cards}, total-bet: {self.total_bet}")
                         print(current)
 
                         if self.preflop:
@@ -320,7 +326,7 @@ class PokerTable:
                                                 else:
                                                     print(
                                                         "Invalid number. Minimum bet is 10 chips more than the highest bet.")
-                                                break
+
                                             except ValueError:
                                                 print(
                                                     "Invalid input. Please enter a valid number for the bet.")
@@ -353,11 +359,11 @@ class PokerTable:
                     if current == self.player_head or self.all_checked():
                         break
             else:
-                print("in else")
                 self.reset_highest()
                 self.player_info()
                 if self.check_active_player() == 1:
                     self.determine()
+                    break
 
                 self.start_next_phase()
         else:
@@ -375,6 +381,5 @@ mygame.append(player1)
 mygame.append(player2)
 mygame.append(player3)
 mygame.append(player4)
-# mygame.player_info()
 
 mygame.play_round()

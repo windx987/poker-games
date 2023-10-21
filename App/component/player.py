@@ -35,7 +35,7 @@ class Player:
 class Hand:
     def __init__(self):
         self.cards = []
-        self.strength = None
+        self.strength = 0
 
     def get_cards(self):
         return self.cards
