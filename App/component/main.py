@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import Any, Union
 from player import Player, Hand, Action
 from deck import Deck, Card
-from utils import ListNode
+from utils import ListNode, clear_screen
 from myenum import Action, CurrentPhase
 
 
@@ -17,6 +17,9 @@ class PokerTable:
         self.current_phase = CurrentPhase.PREFLOP
         self.preflop = True
 
+    def reset_total_bet(self):
+        self.total_bet = 0
+
     def reset_deck(self):
         self.deck = Deck()
 
@@ -29,6 +32,17 @@ class PokerTable:
 
     def clear_community_cards(self):
         self.community_cards = []
+
+    def clear_player_cards(self):
+        self.current_phase = CurrentPhase.PREFLOP
+        self.preflop = True
+
+        current = self.player_head
+        while True:
+            current.hand.reset_cards()
+            current = current.next
+            if current == self.player_head:
+                break
 
     def append(self, player):
         if not isinstance(player, Player):
@@ -45,6 +59,33 @@ class PokerTable:
                 current_player = current_player.next
             current_player.next = player
             player.next = self.player_head
+
+    def remove_player(self, player_to_remove):
+        if not isinstance(player_to_remove, Player):
+            raise ValueError(
+                "Only Player instances can be removed from the linked list.")
+
+        if self.player_head is None:
+            raise ValueError("Cannot remove a player from an empty list.")
+
+        if self.player_head == player_to_remove:
+            # If the player to remove is the head
+            if self.player_head.next == self.player_head:
+                self.player_head = None  # Removing the last player
+            else:
+                current_player = self.player_head
+                while current_player.next != self.player_head:
+                    current_player = current_player.next
+                current_player.next = self.player_head.next
+                self.player_head = self.player_head.next
+        else:
+            # If the player to remove is not the head
+            current_player = self.player_head
+            while current_player.next != player_to_remove:
+                current_player = current_player.next
+                if current_player.next == self.player_head:
+                    raise ValueError("Player not found in the list.")
+            current_player.next = player_to_remove.next
 
     def player_count(self):
         total_player = 0
@@ -119,6 +160,7 @@ class PokerTable:
         winner = player  # Assuming there's a single winner
         winner.add_chips(self.total_bet)
         print(f"{winner.name} wins and receives {self.total_bet} chips.")
+        self.reset_total_bet()
 
     def distribute_chips_equally(self, players):
         share_per_winner = self.total_bet // len(players)
@@ -127,6 +169,7 @@ class PokerTable:
         winner_names = ', '.join([player.name for player in players])
         print(
             f"{winner_names} win and each receives {self.total_bet // len(players)} chips.")
+        self.reset_total_bet()
 
     def update_player_strength(self):
         current = self.player_head
@@ -137,7 +180,10 @@ class PokerTable:
             if current == self.player_head:
                 break
 
-    def reset_player_status(self):
+    def reset_status(self):
+        self.current_phase = CurrentPhase.PREFLOP
+        self.preflop = True
+
         current = self.player_head
         while True:
             current.status = None
@@ -320,6 +366,7 @@ class PokerTable:
                                                 bet = int(bet_input)
                                                 if bet >= self.highest_bet + 10 and bet <= current.chips:
                                                     current.add_bet(bet)
+                                                    current.status = Action.RISE
                                                     if current.bet == current.chips:
                                                         current.status = Action.ALL_IN
                                                     break
@@ -334,6 +381,7 @@ class PokerTable:
                                         elif mode in ["call", "c"]:
                                             current.add_bet(
                                                 self.highest_bet)
+                                            current.status = Action.CALL
                                             if current.bet == current.chips:
                                                 current.status = Action.ALL_IN
                                             break
@@ -353,14 +401,14 @@ class PokerTable:
                                 else:
                                     print(
                                         f"invalid input. Please enter {available_moves}")
-
+                    clear_screen()
                     self.check_highest()
                     current = current.next
                     if current == self.player_head or self.all_checked():
                         break
             else:
                 self.reset_highest()
-                self.player_info()
+                # self.player_info()
                 if self.check_active_player() == 1:
                     self.determine()
                     break
@@ -369,17 +417,60 @@ class PokerTable:
         else:
             self.showdown()
 
+    def check_bankrupt(self):
+        current = self.player_head
+        while True:
+            if current.chips == 0:
+                while True:
+                    play_again = input(
+                        f"{current.name} you just bankrupt! Do you want to play again ? (yes/no)").strip().lower()
+                    if play_again in ["yes", "y"]:
+                        current.chips = 1000
+                        break
+                    elif play_again in ["no", "n"]:
+                        self.remove_player(current)
+                        break
+                    else:
+                        print("invalid input! please enter (yes/no)")
+
+            current = current.next
+            if current == self.player_head:
+                break
+
+    def reset(self):
+        self.reset_status()
+        self.reset_deck()
+        self.clear_player_cards()
+        self.clear_community_cards()
+
 
 mygame = PokerTable()
+starting_chips = 1000
 
-player1 = Player("Alex", 1000)
-player2 = Player("Jack", 1000)
-player3 = Player("Tomy", 1000)
-player4 = Player("John", 1000)
+# player1 = Player("Alex", 1000)
+# player2 = Player("Jack", 1000)
+# player3 = Player("Tomy", 1000)
+# player4 = Player("John", 1000)
 
-mygame.append(player1)
-mygame.append(player2)
-mygame.append(player3)
-mygame.append(player4)
+while True:
 
-mygame.play_round()
+    while True:
+        player_name = input(
+            "Enter player's name (or 'q' to quit): ").strip().lower()
+
+        if player_name == 'q':
+            break  # Exit the loop if 'q' is entered
+
+        player = Player(player_name, starting_chips)
+        mygame.append(player)
+
+    clear_screen()
+    mygame.play_round()
+    mygame.reset()
+    mygame.check_bankrupt()
+
+    # Check if the game should continue
+    play_again = input("Play another round? (yes/no): ").strip().lower()
+
+    if play_again not in ["yes", "y"]:
+        break
