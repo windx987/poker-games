@@ -13,7 +13,7 @@ class Player:
         self.next = None
 
     def __str__(self):
-        return f"name : {self.name}, hand : {self.hand.cards}, chips : {self.chips}, status : {self.status}, bet : {self.bet}"
+        return f"name : {self.name}, hand : {self.hand.cards}, chips : {self.chips - self.bet}, bet : {self.bet}, status : {self.status}"
 
     def add_chips(self, amount):
         self.chips += amount

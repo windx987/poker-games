@@ -217,7 +217,7 @@ class PokerTable:
     def check_highest(self):
         current = self.player_head
         while True:
-            if current.status != Action.FOLD or current.status != Action.ALL_IN:
+            if current.status != Action.FOLD:
                 if current.bet > self.highest_bet:
                     self.highest_bet = current.bet
                     return True
@@ -296,6 +296,7 @@ class PokerTable:
                         print(
                             f"community-cards: {self.community_cards}, total-bet: {self.total_bet}")
                         print(current)
+                        # self.player_info()
 
                         if self.preflop:
 
@@ -331,11 +332,14 @@ class PokerTable:
                                 if current.bet == self.highest_bet or current.status == Action.ALL_IN:
                                     available_moves += "[C]heck, "
 
-                                if current.chips > self.highest_bet + 10 or current.chips == self.highest_bet:
+                                if (current.chips > self.highest_bet + 10 or current.chips == self.highest_bet) and current.status != Action.ALL_IN and current.bet != current.chips:
                                     available_moves += "[B]et, "
 
+                                if current.status != Action.ALL_IN and current.bet != current.chips:
+                                    available_moves += "[A]ll-in, "
+
                                 if current.status != Action.FOLD:
-                                    available_moves += "[A]ll-in, [F]old"
+                                    available_moves += "[F]old"
 
                                 move = input(
                                     f"NORMAL Move: {available_moves}\nInput: ").strip().lower()
@@ -344,7 +348,7 @@ class PokerTable:
                                     current.status = Action.CHECK
                                     break
 
-                                elif move in ["bet", "b"] and (current.chips > self.highest_bet + 10 or current.chips == self.highest_bet):
+                                elif move in ["bet", "b"] and (current.chips > self.highest_bet + 10 or current.chips == self.highest_bet) and current.status != Action.ALL_IN and current.bet != current.chips:
                                     while True:
 
                                         available_moves = []
@@ -391,7 +395,7 @@ class PokerTable:
                                                 "invaild input. Please enter [R]aise: minimum: 10 chips or [P]ass: via highest bet.")
                                     break
 
-                                elif move in ["all-in", "a"] and (current.status != Action.FOLD):
+                                elif move in ["all-in", "a"] and (current.status != Action.ALL_IN and current.bet != current.chips):
                                     current.add_bet(current.chips)
                                     current.status = Action.ALL_IN
                                     break
@@ -423,7 +427,7 @@ class PokerTable:
             if current.chips == 0:
                 while True:
                     play_again = input(
-                        f"{current.name} you just bankrupt! Do you want to play again ? (yes/no)").strip().lower()
+                        f"{current.name} you just bankrupt! Do you want to play again ? (yes/no): ").strip().lower()
                     if play_again in ["yes", "y"]:
                         current.chips = 1000
                         break
