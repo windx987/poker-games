@@ -87,6 +87,10 @@ class PokerTable:
                     raise ValueError("Player not found in the list.")
             current_player.next = player_to_remove.next
 
+    def move_player_head_to_next(self):
+        if self.player_head is not None:
+            self.player_head = self.player_head.next
+
     def player_count(self):
         total_player = 0
         if self.player_head is None:
@@ -472,6 +476,7 @@ while True:
     mygame.play_round()
     mygame.reset()
     mygame.check_bankrupt()
+    mygame.move_player_head_to_next()
 
     # Check if the game should continue
     play_again = input("Play another round? (yes/no): ").strip().lower()
